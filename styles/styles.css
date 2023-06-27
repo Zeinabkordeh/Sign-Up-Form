@@ -68,10 +68,30 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.info-secondPart{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 4fr 1fr 4fr;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: left;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+
+
 .info-title{
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
   font-weight: 700;
+}
+
+
+.info-thirdPart{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 4fr 1fr 4fr;
+  justify-items: left;
+  row-gap: .5rem;
+  margin-top: .5rem;
 }
 
 input,
@@ -90,6 +110,7 @@ select {
   width: 100%;
   height: 2rem;
   margin-bottom: 1rem;
+  padding-left: 1rem;
 }
 
 #referredby,
@@ -102,9 +123,13 @@ select {
   padding-left: .5rem;
 }
 
+.standalone{
+  font-weight: 800;
+}
 
 label {
-  margin-right: 1rem;
+  margin-right: 3rem;
+  
 }
 
 .comments-box{
@@ -169,7 +194,7 @@ input[type="checkbox"]:focus + label {
 }
 
 
-.hidden-label {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
