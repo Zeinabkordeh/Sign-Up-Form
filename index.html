@@ -22,32 +22,41 @@
             <fieldset class="info">
               <legend class="info-title"> Account Info</legend>
               <label for="Name" class="visually-hidden">Name:</label>
-              <input type="text" 
-                name="Name" 
-                id="name" 
-                required 
-                pattern="[a-zA-Z0-9]+"
-                title="Name can only contain alpha-numeric characters"
-                aria-label="Name containing only alpha-numeric characters"
-              >
+              <input type="text" name="Name" id="name" pattern="[a-zA-Z0-9]+" title="Name can only contain alpha-numeric characters" aria-label="Name containing only alpha-numeric characters"  required placeholder="Full name...">
               <label for="email" class="visually-hidden">Email: </label>
-              <input type="email" name="email" id="email"  required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+              <input type="email" name="email" id="email"  required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required placeholder="Email Address...">
 
               <label for="password" class="visually-hidden">Password: </label>
-              <input type="password" name="password" id="password"  required>
+              <input type="password" name="password" id="password"  required placeholder="Password...min 8 chars">
             </fieldset>
 
             <fieldset class="info">
               <legend class="info-title">Dev Skills</legend>
               <label class="standalone">Programming Languages<br></label>
-              <input class="checkbox" type="checkbox" name="html" id="html" value="html">
-              <label for="html">HTML</label>
-              <input class="checkbox" type="checkbox" name="css" id="css" value="css">
-              <label for="css">CSS</label>
-              <input class="checkbox" type="checkbox" name="js" id="js" value="js">
-              <label for="js">JavaScript</label>
-              <input class="checkbox" type="checkbox" name="php" id="php" value="php">
-              <label for="php">PHP</label>
+              <div class="info-secondPart">
+                  <input class="checkbox" type="checkbox" name="html" id="html" value="html">
+                  <label id="html-lable" for="html">HTML</label>
+                  <input class="checkbox" type="checkbox" name="css" id="css" value="css">
+                  <label id="css-lable" for="css">CSS</label>
+                  <input class="checkbox" type="checkbox" name="js" id="js" value="js">
+                  <label id="js-lable" for="js">JavaScript</label>
+                  <input class="checkbox" type="checkbox" name="php" id="php" value="php">
+                  <label id="php-lable" for="php">PHP</label>
+                  <input class="checkbox" type="checkbox" name="Sass" id="sass" value="Sass">
+                  <label id="sass-lable" for="Sass">Sass</label>
+                  <input class="checkbox" type="checkbox" name="Python" id="python" value="Python">
+                  <label id="python-lable" for="Python">Python<br></label>
+              </div>
+              
+                  <label class="standalone">DevOps<br></label>
+              <div class="info-thirdPart">
+                  <input class="checkbox" type="checkbox" name="GIT" id="git" value="GIT">
+                  <label for="GIT">GIT</label>
+                  <input class="checkbox" type="checkbox" name="Gulp" id="gulp" value="Gulp">
+                  <label for="Gulp">Gulp</label>
+                  <input class="checkbox" type="checkbox" name="Webpack" id="webpack" value="Webpack">
+                  <label for="Webpack">Webpack</label>
+              </div>
             </fieldset>
 
             <fieldset class="info">
@@ -83,7 +92,7 @@
                 </optgroup>
               </select>
                 <div id="additionalDetails" class="hidden"  >
-                  <label for="additionalDetailsInput" class="hidden-label">Please provide additional details</label>
+                  <label for="additionalDetailsInput" class="visually-hidden">Please provide additional details</label>
                   <input type="text" name="additionalDetails" id="additionalDetailsInput" placeholder="Please provide additional details:">
                 </div>
               
